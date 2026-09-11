@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #123b40;
+    color: #2c2013;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.heading {
+    color: #f0dfb5;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.heading p {
+    margin-top: 5px;
+    color: #b7c9c0;
+    font-style: italic;
+}
+
+/* Main game box */
+.game-box {
+    background: #ecdfba;
+    border: 2px solid #96712c;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.journal {
+    height: 400px;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+.message {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.question {
+    color: #24402a;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.answer {
+    color: #5a4a30;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+.game-over {
+    color: #9c3b28;
+    font-weight: bold;
+}
+
+.win {
+    color: #24402a;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Buttons and input */
+.buttons {
+    border-top: 1px solid #b79a62;
+    padding: 18px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 18px;
+    border: 1px solid #96712c;
+    border-radius: 4px;
+    background: #c1943f;
+    color: #2c2013;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d2a94f;
+}
+
+.no-button {
+    background: #33553a;
+    color: white;
+    border-color: #24402a;
+}
+
+.no-button:hover {
+    background: #426b4d;
+}
+
+.input-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #96712c;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.hint {
+    width: 100%;
+    font-size: 13px;
+    color: #5a4a30;
+}
+
+.finished {
+    width: 100%;
+    text-align: center;
+    color: #5a4a30;
+    font-style: italic;
+}
+
+@media (max-width: 500px) {
+    .journal {
+        height: 350px;
+        padding: 18px;
+    }
+
+    .buttons {
+        padding: 15px 18px;
+    }
+
+    .heading h1 {
+        font-size: 23px;
+    }
+}
